@@ -1,0 +1,456 @@
+
+body{
+    background-color: #02186b;
+    color: #565656;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    color: #212121;
+    font-family: Josefin Sans, sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 50px;
+    line-height: 65px;
+}
+h2{
+    font-size: 40px;
+    line-height: 55px;
+}
+h3{
+    font-size: 25px;
+    line-height: 35px;
+}
+h4{
+    font-size: 20px;
+    line-height: 28px;
+}
+h5{
+    font-size: 14px;
+    line-height: 22px;
+}
+h6{
+    font-size: 12px;
+    line-height: 18px;
+}
+.woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a{
+    font-family: Josefin Sans, sans-serif;
+}
+
+a{
+    color: #ffc100;
+}
+
+
+a:focus,
+a:hover{
+    color: #ebad00;
+}
+.post-wrapper .entry-content .more-link:hover,
+.contact-info ul li a:hover{
+    color: #ebad00;
+}
+
+
+.btn-primary,
+.woocommerce a.button,
+.woocommerce button.button.alt,
+.woocommerce input.button,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit,
+.woocommerce .product .entry-summary a.single_add_to_cart_button,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce button.button.alt:active,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce input.button:active,
+.woocommerce input.button.alt:hover,
+.woocommerce input.button.alt:focus,
+.woocommerce input.button.alt:active,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce #respond input#submit:active,
+.woocommerce .product .entry-summary a.single_add_to_cart_button:hover,
+.woocommerce .product .entry-summary a.single_add_to_cart_button:focus,
+.woocommerce .product .entry-summary a.single_add_to_cart_button:active,
+.theme-bg,
+.header-top-wrapper,
+.dropdown>li>a::before,
+.header-light .navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar,
+.pricing-table-wrapper:hover .purchase-button a,
+.icon-block:hover .tt-icon.icon-hover-default i,
+.hover-block .icon-block:hover,
+.border-plusbox.hover-block .icon-block-grid:hover,
+.animated-block.hover-block .icon-block-grid:hover,
+.blog-gallery-carousel .carousel-control:focus, 
+.blog-gallery-carousel .carousel-control:hover,
+.blog-navigation a:hover,
+.page-pagination a:hover span,
+.page-pagination > span,
+.widget.widget_mc4wp_form_widget,
+.widget_tag_cloud a:hover,
+.pager.comment-navigation li a:hover,
+.comments-wrapper .form-submit input,
+.vc_tta-color-theme_default_color .vc_tta-panel .vc_tta-panel-heading,
+.woocommerce ul li.product a.button:hover,
+.woocommerce a.added_to_cart,
+.woocommerce span.onsale,
+.woocommerce ul.products li.product .onsale,
+.woocommerce .quantity .btn-quantity:hover,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active > a,
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, 
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, 
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.filter-nav ul li:after,
+.widget_calendar #today,
+.pagination .current,
+.post-wrapper .post-overlay a:hover:before,
+.post-wrapper .entry-content .more-link:after,
+.footer-section .scroll-top i,
+.tt-wishlist-count span, 
+.tt-cart-count .cart-contents .cart-count,
+.team-thumb span.contact-no,
+.blog-btn:hover,
+#tribe-events .tribe-events-button, 
+#tribe-events .tribe-events-button:hover, 
+#tribe_events_filters_wrapper input[type=submit], 
+.tribe-events-button, 
+.tribe-events-button.tribe-active:hover, 
+.tribe-events-button.tribe-inactive, 
+.tribe-events-button:hover, 
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], 
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a,
+.navbar-default .side .navbar-nav > li.current-menu-ancestor>a:after,
+.navbar-default .side .navbar-nav > li.current-menu-parent>a:after,
+.navbar-default .side .navbar-nav > li.current-menu-item>a:after,
+.side .nav > li a::after,
+.tribe-events-widget-link a,
+.post-overlay,
+.process-in > li:hover .process-dot::after,
+.process-desc .process-info,
+.work-external-link li a:hover,
+.service-content a.read-more::after, 
+.tribe-events-read-more::after, 
+.post-wrapper .entry-content .more-link::after,
+.tribe-events-list-widget .tribe-events-widget-link a,
+.wpcf7-form .wpcf7-form-control.wpcf7-submit,
+.topbar-info .download-link a:hover{
+    background-color: #ffc100;
+}
+
+
+.vc_tta-color-theme_default_color .vc_tta-panel.vc_active .vc_tta-panel-heading,
+.tribe-events-widget-link a:hover{
+    background-color: #ebad00;
+}
+
+
+.woocommerce ul.products li.product h2.woocommerce-loop-product__title:hover,
+.check-circle-list li:hover i,
+.theme-color,
+.contact-info ul li i,
+.footer-nav ul.sub-menu li a:hover,
+.icon-block.icon-default:hover .tt-icon i,
+.icon-block:hover .tt-icon.icon-hover-white i,
+.icon-block .tt-icon a.theme-color, 
+.icon-block h3.theme-color,
+.icon-block h3 a.theme-color,
+.icon-wrapper .mail a:hover,
+.entry-header .entry-meta span a:hover,
+.single-post .entry-footer .post-tags a:hover,
+.authors-post a:hover,
+.author-social ul li a:hover,
+.tt-sidebar-wrapper .widget_product_categories ul li a:hover:before,
+.tt-sidebar-wrapper .widget_layered_nav ul li a:hover:before,
+.tt-sidebar-wrapper .widget_categories ul li a:hover:before,
+.tt-sidebar-wrapper .widget_archive ul li a:hover:before,
+.tt-sidebar-wrapper .widget_meta ul li a:hover:before,
+.tt-sidebar-wrapper .widget_pages ul li a:hover:before,
+.tt-sidebar-wrapper .widget_nav_menu ul li a:hover:before,
+.tt-sidebar-wrapper .widget_recent_entries ul li a:hover:before,
+.tt-sidebar-wrapper .widget_recent_comments ul li:hover:before,
+.tt-sidebar-wrapper .widget_product_categories ul li a:hover,
+.tt-sidebar-wrapper .widget_layered_nav ul li a:hover,
+.tt-sidebar-wrapper .widget_categories ul li a:hover,
+.tt-sidebar-wrapper .widget_archive ul li a:hover,
+.tt-sidebar-wrapper .widget_meta ul li a:hover,
+.tt-sidebar-wrapper .widget_pages ul li a:hover,
+.tt-sidebar-wrapper .widget_nav_menu ul li a:hover,
+.tt-sidebar-wrapper .widget_recent_comments ul li a:hover,
+.tt-sidebar-wrapper .widget_recent_entries ul li a:hover,
+.author-social-links ul li a:hover,
+.widget_mc4wp_form_widget .btn,
+.widget_mc4wp_form_widget .btn:hover,
+.widget_mc4wp_form_widget .btn:focus,
+.comment-meta-wrapper a:hover,
+.primary-footer a:hover,
+.shop-category-wrapper h2 i,
+.shop-category-wrapper ul li a:hover,
+.entry-summary .yith-wcwl-add-to-wishlist .add_to_wishlist::before,
+.entry-summary .yith-wcwl-add-to-wishlist a,
+a.compare:hover:before,
+.product_meta span a:hover,
+.woocommerce .woocommerce-MyAccount-navigation ul li a:hover,
+.woocommerce .woocommerce-MyAccount-navigation ul li.is-active a,
+.shop-category-wrapper ul li a:hover,
+.entry-header span a:hover,
+.comment-reply-link:hover,
+.attr-nav > ul > li > a:hover,
+.header-wrap ul li a:hover,
+.entry-content table a:hover,
+.comments-wrapper li.pingback a:hover,
+.woocommerce-message::before,
+.woocommerce ul.cart_list li a:hover, 
+.woocommerce ul.product_list_widget li a:hover,
+.navbar-default .side .mobile-menu ul li a:hover,
+.social-links ul li a:hover,
+.widget .form-group button:after,
+.single-post-navigation a:hover,
+.tribe-events-list-widget h4 a:hover,
+.ie .entry-title a:hover,
+.ie .home-blog-content h3 a:hover,
+.ie .tt-popular-post .media-body h4 a:hover,
+.ie .tt-latest-post .media-body h4 a:hover,
+.ie .tt-recent-comments .media-body h4 a:hover,
+.ie .home-blog-wrapper .entry-title a:hover,
+.ie .post-wrapper .entry-title a:hover,
+.ie .tribe-events-list .type-tribe_events h2 a:hover,
+.document-block .icon-block .btn.custom,
+.popup-wrapper .popup-play,
+.tt-time-lines .swiper-button-next::after, .tt-time-lines .swiper-button-prev::before,
+.service-body .service-title a:hover,
+.service-content a:hover,
+.topbar-info .download-link a,
+.single-tribe_events .tribe-events-event-meta a:hover,
+.tt-popular-post .entry-meta li a:hover,
+.tt-latest-post .entry-meta li a:hover,
+.tt-recent-comments .entry-meta li a:hover,
+.navbar-default .navbar-nav .dropdown-wrapper li.current-menu-ancestor>a,
+.navbar-default .navbar-nav .dropdown-wrapper li.current-menu-parent>a,
+.navbar-default .navbar-nav .dropdown-wrapper li.current-menu-item>a{
+    color: #ffc100;
+}
+
+.tt-time-lines .swiper-slide h3{
+    color: #ebad00;
+}
+
+
+.page-numbers .current,
+.pagination .current,
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.tt-popular-post .nav-tabs>li.active>a, 
+.tt-popular-post .nav-tabs.nav-justified>li.active>a,
+.icon-block.icon-square:hover .tt-icon.icon-hover-default i.theme-color,
+.icon-block.icon-round:hover .tt-icon.icon-hover-default i.theme-color,
+.icon-block.icon-circle:hover .tt-icon.icon-hover-default i.theme-color,
+.blog-navigation a:hover,
+.widget select:focus,
+.vc_tta.vc_general.vc_tta-color-theme_default_color.vc_tta-style-outline .vc_tta-panel.vc_active .vc_tta-panel-heading,
+.woocommerce #review_form #respond textarea:focus,
+.woocommerce #reviews input:focus,
+.woocommerce #reviews textarea:focus,
+.woocommerce .select2-choice:focus,
+.woocommerce .input-text:focus,
+.widget .widget-subscription input[type="email"]:focus,
+.topbar-info .download-link a,
+.form-control:focus{
+    border-color: #ffc100;
+}
+
+.woocommerce ul.products li.product .onsale::before{
+    border-color: transparent #ffc100;
+}
+
+.woocommerce-message {
+    border-top-color: #ffc100;
+}
+.nav>li a:before{
+    border-color: transparent transparent #ffc100;
+}
+.navbar-default .navbar-nav>li>a:before {
+    border-color: transparent transparent #ffc100;
+}
+
+
+
+.vc_tta-color-white.vc_tta-style-flat .vc_tta-panel.vc_active .vc_tta-panel-title>a,
+.vc_tta-color-theme_default_color.vc_tta-style-outline .vc_tta-panel.vc_active .vc_tta-panel-title>a{
+    color: #ffc100 !important;
+}
+
+.featured-carousel.owl-theme .owl-dots .owl-dot.active span, 
+.featured-carousel.owl-theme .owl-dots .owl-dot:hover span,
+.page-numbers>li>a:hover, 
+.page-numbers>li>span:hover, 
+.page-numbers>li>a:focus, 
+.page-numbers>li>span:focus,
+.pagination>li>a:hover, 
+.pagination>li>span:hover, 
+.pagination>li>a:focus, 
+.pagination>li>span:focus,
+.page-numbers .current,
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.vc_tta-color-theme_default_color.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading,
+.vc_tta-color-theme_default_color.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-body, 
+.vc_tta-color-theme_default_color.vc_tta-style-flat .vc_tta-panel.vc_active .vc_tta-panel-heading,
+.wpb-js-composer .vc_tta.vc_tta-accordion.vc_tta-color-grey .vc_tta-controls-icon.vc_tta-controls-icon-plus,
+.vc_btn3-color-theme_primary_color,
+.tt-filter-wrap.default-color ul li button:hover, 
+.tt-filter-wrap.default-color ul li button.active{
+    background-color: #ffc100 !important;
+}
+
+.vc_gitem-animate .vc_gitem-zone-b{
+    background-color: rgba(255,193,0, .85) !important;
+}
+.vc_tta-tab.vc_active a,
+.process-desc .process-info::before{
+    border-bottom-color: #ffc100 !important;
+}
+
+
+    .header-transparent .navbar-default,
+    .navbar-default {
+        background-color:transparent;
+    }
+    .header-transparent .header-wrapper.sticky .navbar-default,
+    .header-wrapper.sticky .navbar-default {
+        background-color:#02257a;
+    }
+    .header-wrapper.sticky .attr-nav > ul > li a i,
+    .header-transparent .header-wrapper.sticky .navbar-default .navbar-nav > li > a,
+    .header-wrapper.sticky .navbar-default .navbar-nav > li > a{
+        color:#ffffff;
+    }
+    .header-wrapper.sticky .attr-nav > ul > li a i:hover,
+    .header-transparent .header-wrapper.sticky .nav > li a::after,
+    .header-wrapper.sticky .navbar-default .navbar-nav li.current-menu-ancestor>a, 
+    .header-wrapper.sticky .navbar-default .navbar-nav li.current-menu-parent>a, 
+    .header-wrapper.sticky .navbar-default .navbar-nav li.current-menu-item>a,
+    .header-wrapper.sticky .navbar-default .navbar-nav > li > a:hover{
+        color:#e8e8e8;
+    }
+    .header-transparent .header-wrapper.sticky .nav > li a::after,
+    .header-wrapper.sticky .nav > li a::after{
+        background-color: #e8e8e8    }
+
+
+
+@media (max-width : 991px) {
+        
+            .header-wrapper.sticky .navbar-default {
+            background-color:#02257a !important;
+        }
+    
+            .header-transparent .navbar-default .side .mobile-menu .navbar-nav li a,
+        .navbar-default .side .mobile-menu .navbar-nav li a{
+            color:#02257a;
+        }
+        .tt-wishlist-count > a, .tt-cart-count .cart-contents{
+            color:#02257a;
+        }
+        
+    .navbar-nav li a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, 
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a, 
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, 
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .dropdown-menu-trigger.menu-collapsed{
+        color: #ffc100;
+    }
+
+    .navbar-default .navbar-nav li.current-menu-ancestor>a,
+    .navbar-default .navbar-nav li.current-menu-parent>a,
+    .navbar-default .navbar-nav li.current-menu-item>a{
+        color: #ffc100;
+    }
+}
+
+
+
+
+
+    .footer-single-column .footer-section {
+        background-color: #04164e;
+    }
+
+.service-body .service-title a,
+.entry-title a,
+.home-blog-content h3 a,
+.tt-popular-post .media-body h4 a,
+.tt-latest-post .media-body h4 a,
+.tribe-events-list-widget h4 a,
+.tt-recent-comments .media-body h4 a,
+.home-blog-wrapper .entry-title a,
+.post-wrapper .entry-title a,
+.tribe-events-list .type-tribe_events h2 a{
+    background: -moz-linear-gradient(transparent calc(100% - 2px), #ffc100 2px);
+    background: -webkit-linear-gradient(transparent calc(100% - 2px), #ffc100 2px);
+    background: -o-linear-gradient(transparent calc(100% - 2px), #ffc100 2px);
+    background: linear-gradient(transparent calc(100% - 2px), #ffc100 2px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+}
+.tt-recent-comments .media-body h4 a,
+.tribe-events-list-widget h4 a,
+.tt-latest-post .media-body h4 a{
+    background: -moz-linear-gradient(transparent calc(100% - 1px), #ffc100 1px);
+    background: -webkit-linear-gradient(transparent calc(100% - 1px), #ffc100 1px);
+    background: -o-linear-gradient(transparent calc(100% - 1px), #ffc100 1px);
+    background: linear-gradient(transparent calc(100% - 1px), #ffc100 1px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+}
+.tt-time-lines .time-lines-wrapper:after{
+    background: #ffc100;
+    background: -moz-linear-gradient(left, #fff332 0%, #ebad00 50%, #fff332 100%); 
+    background: -webkit-linear-gradient(left, #fff332 0%,#ebad00 50%,#fff332 100%); 
+    background: linear-gradient(to right, #fff332 0%,#ebad00 50%,#fff332 100%);
+}
+.tt-time-lines .current-year.swiper-slide::after {
+    background-color: #ebad00}
+.tt-time-lines .swiper-slide::before {
+    box-shadow: 0 5px 17px 0 #ebad00;
+}
+.outline-block .icon-block:hover,
+.dark-block .icon-block:hover{
+    box-shadow: 0 4px 0 #ffc100;
+}
+
+::selection {
+  background: #ffc100;
+  color: #fff;
+}
+::-moz-selection {
+  background: #ffc100;
+  color: #fff;
+}

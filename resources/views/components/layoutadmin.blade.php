@@ -1,0 +1,473 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="component/layout.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  {{--table links bootstrip and jquery --}}
+  <meta name="description" content="Bootstrap.">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <title>{{$title}}</title>
+</head>
+<body>
+    {{-- <div class="menu">
+        <a href="cventry" ><button class="btn btn-info">Cvs Entry </button></a>
+            <a href="allcvdata"><button class="btn btn-info">ALL CVS</button></a>
+            <a href="show-mason"><button class="btn btn-info">MASON DATA</button></a>
+            <a href="show-forman"><button class="btn btn-info">FORMAN DATA</button></a>
+            <a href="show-chargehend"><button class="btn btn-info">CHARGE HAND</button></a>
+            <a href="show-liber"><button class="btn btn-info">Liber</button></a>
+            <form  action="" method="GET">
+                <div class="input-group pull-right ">
+                <input type="text" class="" placeholder="Search" id="txtSearch"/>
+                <div class="input-group-btn pull-right ">
+                        <button class="btn btn-primary ml-10 pl-10" type="submit">Search</button>
+                </div>
+                </div>
+                </form>
+    </div> --}}
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/quill/quill.snow.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/quill/quill.bubble.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/simple-datatables/style.css')}}" rel="stylesheet">
+  <link href="{{url('frontend/assets/vendor/simple-datatables/showdatabase.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url('frontend/assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{url('views/ALLCVDATA/alldata.css')}}" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.3.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{{url('frontend/assets/img/logo.png')}}" alt="">
+        <span class="d-none d-lg-block">PAK Future Int</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="GET" action="search">
+        @csrf
+        <input type="text" name="search" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="trade"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{{url('frontend/assets/img/messages-1.jpg')}}" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{{url('frontend/assets/img/messages-2.jpg')}}" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{{url('frontend/assets/img/messages-3.jpg')}}" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="{{url('frontend/assets/img/profile-img.jpg')}}" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Hashmat ullah</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>HAHMAT ULLAH</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/app/dishbord">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/app/cventry">
+        <i class="bi bi-file-earmark-plus-fill"></i>
+          <span>Resume  Entry</span>
+        </a>
+        
+        <a class="nav-link collapsed" href="/app/allcvdata">
+        <i class="bi bi-clipboard-check-fill"></i>
+
+          <span>Receved by hand Resume</span>
+        </a>
+        <a class="nav-link collapsed" href="/app/onlineapplyvisa">
+        <i class="bi bi-clipboard-check-fill"></i>
+          <span>Online Resume</span>
+        </a>
+        <a class="nav-link collapsed" href="/app/show-approval">
+        <i class="bi bi-file-earmark-plus-fill"></i>
+            <span>Approval</span>
+        </a>
+        <a class="nav-link collapsed" href="/app/approval-records">
+        <i class="bi bi-clipboard-check-fill"></i>
+            <span>Approval Records</span>
+        </a>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/form-of-sumitted-visa">
+                <i class="bi bi-file-arrow-up-fill"></i>
+                <span>Submit visa </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/app/showallvasa">
+                <i class="bi bi-globe2"></i>
+                <span>Available Visas</span>
+            </a>
+        </li>
+
+
+       
+          <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#passport-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-p-square-fill"></i><span>PASSPORT</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="passport-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li>
+                <a href="/app/entrypassport">
+                  <i class="bi bi-circle"></i><span>Passport Entry From</span>
+                </a>
+              </li>
+              <li>
+                <a href="getallpossport">
+                  <i class="bi bi-circle"></i><span>Present Passport</span>
+                </a>
+              </li>
+              <li>
+                <a href="/app/returnpassport">
+                  <i class="bi bi-circle"></i><span>RETURN PASSPORT From</span>
+                </a>
+              </li>
+              <li>
+                <a href="/app/getreturnpossport">
+                  <i class="bi bi-circle"></i><span>Return Passports</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#payments-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-credit-card-fill"></i><span>Payments</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="payments-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li>
+                <a href="/recived-amount">
+                  <i class="bi bi-circle"></i><span>Receive Payment</span>
+                </a>
+              </li>
+              <li>
+                <a href="/allrecivepayment">
+                  <i class="bi bi-circle"></i><span>Receive Payment Record</span>
+                </a>
+              </li>
+              <li>
+                <a href="returnpaymentview">
+                  <i class="bi bi-circle"></i><span>Return Payment</span>
+                </a>
+              </li>
+              <li>
+                <a href="allreturnpayment">
+                  <i class="bi bi-circle"></i><span>Return Payment Record</span>
+                </a>
+              </li>
+              <li>
+                <a href="pficostpaymentview">
+                  <i class="bi bi-circle"></i><span>Cost Pfi</span>
+                </a>
+              </li>
+              <li>
+                <a href="allpficost">
+                  <i class="bi bi-circle"></i><span>Cost Pfi Record</span>
+                </a>
+              </li>
+              <li>
+                <a href="/find-monthly-amount">
+                  <i class="bi bi-circle"></i><span>Monthly Payment Record</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          {{-- <div class="d-flex">
+          <li class="nav-item ">
+                <i class="bi bi-card-list">
+            <select class=" bi bi-card-list border-0" name="" id="">
+                <option value="Payement Recive">Payement Recive</option>
+                <option value="Payement Recive">Return Payement</option>
+            </select></i>
+
+
+          </li>
+        </div><!-- End Register Page Nav --> --}}
+        
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="/app/pak-feature-employees">
+          <i class="bi bi-user"></i>
+          <span>Employees</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/userhome">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>LogOut</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+   
+
+  </main><!-- End #main -->
+
+ 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url('frontend/assets/vendor/apexcharts/apexcharts.min.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/chart.js/chart.min.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/echarts/echarts.min.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/quill/quill.min.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/simple-datatables/simple-datatables.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/tinymce/tinymce.min.js')}}"></script>
+  <script src="{{url('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+    {{$body}}
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.allcvtable{
+    
+    background-color: blue !important;
+}
+.ALLTADA{
+    background-color: rgb(0, 255, 4);
+    /* width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    padding-left: 500px; */
+}
+.entrysubmitbtn{
+    margin-left: 500px !important;
+}
+.edtdeletebtn{
+    display: flex !important;
+    display: inline-flex;
+    border-radius: 10px !important;
+}
+.EDBTN{
+    border-radius: 10px !important;
+
+}
+.textcolor{
+    color: black !important;
+}
+.allcontenairapplyforvisa{
+    width: 800px;
+    height: 1000px;
+    border: 2px solid black;
+}

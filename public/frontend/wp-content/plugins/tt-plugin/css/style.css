@@ -1,0 +1,570 @@
+/*
+POPULAR POSTS
+--------------------------------------------------------*/
+.tt-popular-post {
+    border: 1px solid #eee;
+}
+.tt-popular-post .tab-content{
+    padding: 30px 20px;
+}
+.tt-popular-post .nav-tabs {
+    border-bottom: 1px solid transparent;
+}
+.tt-popular-post .nav-tabs>li,
+.tt-popular-post .nav-tabs.nav-justified>li {
+    position: relative;
+}
+.tt-popular-post .nav-tabs>li::before,
+.tt-popular-post .nav-tabs.nav-justified>li::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #eee;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    z-index: 10;
+}
+.tt-popular-post .nav-tabs>li:last-child::before,
+.tt-popular-post .nav-tabs.nav-justified>li:last-child::before {
+    display: none;
+}
+.tt-popular-post .nav-tabs>li>a, 
+.tt-popular-post .nav-tabs.nav-justified>li>a {
+	padding: 17px 30px;
+    color: #bebebe;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-left: none!important;
+    border-top: none!important;
+    border-right: none!important;
+    border-bottom: 4px solid transparent!important;
+    background: none;
+
+}
+.tt-popular-post .nav-tabs>li.active>a, 
+.tt-popular-post .nav-tabs.nav-justified>li.active>a {
+	color: #202020;
+    border-bottom: 4px solid #ffc100!important;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.tt-popular-post .media,
+.tt-latest-post .media,
+.tt-recent-comments .media,
+.tribe-events-list-widget ol.tribe-list-widget li {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+}
+.tribe-events-list-widget ol.tribe-list-widget li{
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+}
+.tribe-events-list-widget ol.tribe-list-widget li:last-child{
+    border-bottom: 0;
+}
+.tribe-events-widget-link{
+    margin-top: 25px;
+}
+.tribe-events-list-widget .tribe-events-widget-link a{
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-weight: normal;
+    background-color: #ffc100;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.tribe-events-widget-link a:hover{
+    color: #fff;
+}
+.footer-sidebar .tt-popular-post .media,
+.footer-sidebar .tt-latest-post .media,
+.footer-sidebar .tt-recent-comments .media {
+    border-bottom: 0;
+}
+.footer-sidebar .tt-popular-post .media:last-of-type,
+.footer-sidebar .tt-latest-post .media:last-of-type,
+.footer-sidebar .tt-recent-comments .media:last-of-type,
+.tt-popular-post .media:last-of-type,
+.tt-latest-post .media:last-of-type,
+.tt-recent-comments .media:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.tt-popular-post .media .media-left,
+.tt-latest-post .media .media-left,
+.tt-recent-comments .media .media-left{
+    width: 80px;
+    height: auto;
+    float: left;
+}
+.tt-popular-post .media img,
+.tt-latest-post .media img,
+.tt-recent-comments .media img{
+    width: 65px;
+    height: auto;
+    border-radius: 4px;
+}
+.tt-popular-post .media-body,
+.tt-latest-post .media-body,
+.tt-recent-comments .media-body {
+    vertical-align: middle;
+}
+.tt-popular-post .media .media-left,
+.tt-latest-post .media .media-left,
+.tt-recent-comments .media .media-left {
+    padding-right: 15px;
+}
+.tribe-events-list-widget h4,
+.tt-popular-post .media-body h4,
+.tt-latest-post .media-body h4,
+.tt-recent-comments .media-body h4{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 0;
+}
+.tribe-events-list-widget h4 a,
+.tt-popular-post .media-body h4 a,
+.tt-latest-post .media-body h4 a,
+.tt-recent-comments .media-body h4 a{
+    color: #212121;
+}
+.footer-section .tt-popular-post .media-body h4 a,
+.footer-section .tt-latest-post .media-body h4 a,
+.footer-section .tt-recent-comments .media-body h4 a{
+    color: #ccc;
+}
+.tt-popular-post .media-body h4+span,
+.tt-latest-post .media-body h4+span {
+    float: right;
+}
+.tt-popular-post .entry-meta li,
+.tt-latest-post .entry-meta li,
+.tt-recent-comments .entry-meta li,
+.tribe-events-list-widget .tribe-event-duration {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.toogle-menu-sidebar .tt-popular-post .entry-meta li,
+.toogle-menu-sidebar .tt-latest-post .entry-meta li,
+.toogle-menu-sidebar .tt-recent-comments .entry-meta li{
+    font-size: 11px;
+    letter-spacing: -0.2px;
+}
+
+.tt-latest-post .entry-meta li,
+.tt-popular-post .entry-meta li,
+.tt-popular-post .entry-meta li a,
+.tt-latest-post .entry-meta li a,
+.tt-recent-comments .entry-meta li a,
+.tribe-events-list-widget .tribe-event-duration{
+    color: #666666;
+}
+.tt-popular-post .entry-meta li a:hover,
+.tt-latest-post .entry-meta li a:hover,
+.tt-recent-comments .entry-meta li a:hover{
+    color: #ffc100;
+}
+.tt-latest-post .entry-meta,
+.tt-popular-post .entry-meta,
+.tt-recent-comments .entry-meta{
+    line-height: 20px;
+}
+.tt-popular-post .entry-meta li+li,
+.tt-latest-post .entry-meta li+li,
+.tt-recent-comments .entry-meta li+li {
+    position: relative;
+}
+.tt-popular-post .entry-meta li+li:before,
+.tt-latest-post .entry-meta li+li:before,
+.tt-recent-comments .entry-meta li+li:before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    bottom: 8px;
+    width: 3px;
+    height: 3px;
+    background-color: #929292;
+    display: block;
+    border-radius: 50%;
+}
+
+
+/*price chart style*/
+.creptaam-price-chart{
+    background-color: #1E1F21;
+    text-align: center;
+    padding: 15px 0 0;
+    position: relative;
+    min-height: 513px;
+}
+.creptaam-price-chart .top2{
+    margin-bottom: 10px;
+}
+#loading, .error {
+    top: 150px;
+    width: 100%;
+    position: absolute;
+}
+.error {
+    color: red;
+}
+#loading {
+    display: none;
+}
+#ChartContainer {
+    height: 100%;
+}
+.top {
+    margin-top: 8px;
+}
+#relation-selection {
+    margin-left: 18px;
+}
+.top2 {
+    margin-top: 8px;
+}
+div.buttons {
+    display: inline-block;
+    color: #fff;
+}
+.buttons > a, .help-button {
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 7px;
+    margin-right: 3px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all ease-out 0.2s;
+    text-decoration: none;
+    min-width: 25px;
+}
+.buttons > a:hover {
+    border-color: #D6D6D6;
+}
+.buttons > a.active {
+    color: #DDDF0D;
+    border-color: #DDDF0D;
+}
+#average-button.active {
+    color: #5494D3;
+    border-color: #5494D3;
+}
+.help-button {
+    margin-left: 35px;
+}
+#average-button {
+    margin-left: 10px;
+}
+#about {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: none;
+    background: rgba(22,22,22,0.75);
+}
+#about-inner {
+    margin-top: 200px;
+    display: inline-block;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    padding: 25px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: left;
+    line-height: 130%;
+    box-shadow: 0px 0px 20px #0C0C0C;
+}
+#about-inner > h1 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+
+/*cryptocurrency calculator*/
+.creptaam-calculator{
+    text-align: center;
+}
+.creptaam-calculator form{
+    display: inline-block;
+    padding: 8px;
+    background-color: #3A4257;
+    border-radius: 5px;
+}
+.creptaam-calculator .form-group{
+    background-color: #485065;
+    border-radius: 4px;
+}
+.creptaam-calculator .form-group select,
+.creptaam-calculator .form-group input,
+.creptaam-calculator .form-group p{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    height: 90px;
+}
+.creptaam-calculator .form-group select {
+    width: 120px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Custom Select Arrow*/
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper:after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #fff;
+    right: 10px;
+    top: 34px;
+    position: absolute;
+    pointer-events: none;
+}
+
+/*hide native arrows*/
+.creptaam-calculator select {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+}
+/* IE11 hide native button (thanks Matt!) */
+.creptaam-calculator select::-ms-expand {
+    display: none;
+}
+
+.creptaam-calculator .form-group select option{
+    background-color: #ffffff;
+    color: #212121;
+    font-size: 14px;
+    line-height: 30px;
+}
+.creptaam-calculator .form-group input{
+    width: 90px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .creptaam-calculator .form-group input {
+        width: 100%;
+    }
+}
+
+.creptaam-calculator .form-group p{
+    min-width: 250px;
+    margin: 0;
+    line-height: 90px;
+}
+.creptaam-calculator .form-group input {
+    background: #f6d004;
+    border-radius: 4px;
+}
+
+.creptaam-calculator input[type=number]::-webkit-inner-spin-button, 
+.creptaam-calculator input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.creptaam-calculator select:focus,
+.creptaam-calculator input:focus {
+    outline: none;
+}
+
+.creptaam-calculator .form-group input::-moz-placeholder {
+    color: #fff;
+}
+.creptaam-calculator .form-group input::-ms-input-placeholder {
+    color: #fff;
+}
+.creptaam-calculator .form-group input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+
+/*creptaam advanced chart*/
+.creptaam-price-list-widget .header-div > a:nth-child(2),
+.cryptocompare-logo{
+    display: none !important;
+}
+
+/*parallax styles*/
+.tt-parallax-wrapper{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.tt-parallax-wrapper div>div {
+    position: relative;
+    z-index: 1;
+}
+.tt-parallax-left{
+    position: absolute;
+    left: 0;
+    width: 48%;
+    height: 100%;
+}
+.tt-parallax-right{
+    position: absolute;
+    right: 0;
+    width: 48%;
+    height: 100%;
+}
+
+@media(max-width: 767px){
+    .tt-parallax-left,
+    .tt-parallax-center,
+    .tt-parallax-right{
+        display: none;
+    }
+}
+.tt-parallax-wrapper img{
+    -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.tt-parallax-center img{
+    right: 0;
+    margin: 0 auto;
+}
+.tt-parallax-wrapper .tt-parallax-right img{
+    left: auto;
+    right: 0;
+}
+
+.animated.ttScale3D {
+    animation-duration: 2s;
+}
+
+.ttScale3D {
+  animation-name: ttScale3D;
+}
+
+@keyframes ttScale3D {
+  from {
+    transform: scale3d(0, 0, 0);
+  }
+  5% {
+    transform: scale3d(0.08, 0.08, 0.08);
+  }
+  10% {
+    transform: scale3d(0.16, 0.16, 0.16);
+  }
+
+  15% {
+    transform: scale3d(0.24, 0.24, 0.24);
+  }
+
+  20% {
+    transform: scale3d(0.32, 0.32, 0.32);
+  }
+
+  25% {
+    transform: scale3d(0.40, 0.40, 0.40);
+  }
+
+  30% {
+    transform: scale3d(0.48, 0.48, 0.48);
+  }
+
+  35% {
+    transform: scale3d(0.56, 0.56, 0.56);
+  }
+
+  40% {
+    transform: scale3d(0.64, 0.64, 0.64);
+  }
+
+  43% {
+    transform: scale3d(0.72, 0.72, 0.72);
+  }
+
+  45% {
+    transform: scale3d(0.80, 0.80, 0.80);
+  }
+
+  47% {
+    transform: scale3d(0.88, 0.88, 0.88);
+  }
+
+  50% {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+
+  53% {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+
+  55% {
+    transform: scale3d(0.88, 0.88, 0.88);
+  }
+  57% {
+    transform: scale3d(0.72, 0.72, 0.72);
+  }
+  60% {
+    transform: scale3d(0.64, 0.64, 0.64);
+  }
+
+  65% {
+    transform: scale3d(0.56, 0.56, 0.56);
+  }
+
+  70% {
+    transform: scale3d(0.48, 0.48, 0.48);
+  }
+
+  75% {
+    transform: scale3d(0.48, 0.48, 0.48);
+  }
+
+  80% {
+    transform: scale3d(0.32, 0.32, 0.32);
+  }
+
+  85% {
+    transform: scale3d(0.24, 0.24, 0.24);
+  }
+
+  90% {
+    transform: scale3d(0.16, 0.16, 0.16);
+  }
+
+  95% {
+    transform: scale3d(0.08, 0.08, 0.8);
+  }
+  
+  100% {
+    transform: scale3d(0, 0, 0);
+  }
+}
